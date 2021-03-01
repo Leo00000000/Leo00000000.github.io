@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+  <head><!--webページの設定に関する情報-->
+    <link rel="stylesheet" href="stylesheet.css"><!--Cssの読み込み-->
+          <!--#Cssを読み込む宣言  #読み込むCSSのファイル名-->
+    <meta charset="utf-8"><!--文字コード(文字化けを防ぐ)-->
+    <title>Official Site</title><!--ページタイトル-->
+    <script src="https://kit.fontawesome.com/df15f2aef8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header"><!--ヘッダー始まり-->
+      <div class="container">
+       <div class="header-left">
+          <ul>
+            <li>
+              <a href="#">Logo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li>
+                <a href="#">レジュメ(日本語)</a>
+            </li>
+            <li>
+              <a href="Resume2 copy.pdf">Resume(English)</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+    </div><!--ヘッダー終わり-->
+    <div class="top-wrapper">
+       <div class="container">
+        <h1 class="title">Official Page</h1>
+        <div class="btn-wrapper">
+          <a href="https://www.facebook.com/profile.php?id=100006041853745" class = "btn facebook"><i class="fab fa-facebook"></i>Facebook</a>
+          <a href="#" class = "btn twitter"><i class="fab fa-twitter"></i>Twitter</a>
+          <a href="https://www.instagram.com/leoleo0000000/?hl=ja" class = "btn instagram"><i class="fab fa-instagram"></i>instagram</a>
+        </div>
+       </div>
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+    <div class="main"><!--メイン始まり-->
+      <div class="second-wrapper">
+        <div class="container">
+         <div class="heading">
+          <h2 class="section-title">Background</h2>
+          <div class="backgrounds">
+            <div class="background"><!--日本-->
+              <h2>Japan (2014~2019)</h2>
+              <p class="text-contents"><div class="background-picture">
+                <img src="IMG_4341.jpg"><!--375*500--></div>
+              <div class="text-japan">愛媛県出身。高校卒業後、広島の大学に進学(2014年~2019年)。大学1年次から2年次まで体育会系のサッカー部に所属。しかし、視野を広げるため退部し、
+              英語の勉強を初め、大学3年の夏休むに初めて渡米。北米の文化をもっと知りたいと思い、休学をして一年間カナダにワーキングホリデーすることを決意。
+              帰国後、TOEIC600点を取得し、大学院留学を目指すが、英語での面接がうまくいかず落ちて浪人(2019)。</p></div>
+            </div>
+            <div class="background"><!--アメリカ-->
+              <h2>America (2017,2018, 2019)</h2>
+              <p class="text-contents"><div class="background-picture">
+                <img src="IMG_0709.jpg">
+              </div>2017年、母の友人がアメリカのフィラデルフィアで国際結婚していたため、そこで3ヶ月ホームステイ（初海外）アメリカの魅力にハマり、
+年に一回渡米するためバイトで旅行費を溜める。フィラデルフィアを基点にワシントンDC、ニューヨーク、ボストン、ウエストヴァージニア、ピッツバーグなどを旅する(2018~2019)。この頃から本格的に
+海外での大学院進学を考え、アメリカの大学訪問などに時間を費やした。メールで大学の教授とやりとりし、アメリカの大学でのリアルな授業を体験した(2019)。</p>
+            </div>
+            <div class="background"><!--カナダ-->
+              <h2>Canada (2017~2018)</h2>
+              <p class="text-contents">  <div class="background-picture">
+                <img src="IMG_4393.jpg">
+              </div>カナダへ一年間ワーキングホリデーへ。カナダの首都であるオタワで、日本食レストラン、日本語を教えるなどをして生活費を稼ぐ。
+バンフ、トロント、ケベックなどに旅をする。文化の違いをより詳しく知るためにスポーツイベントのボランティアなどのボランティアに参加した。帰国後、大学に復学。</p>
+            </div>
+            <div class="background"><!--オーストラリア-->
+              <h2>Australia (2019~2021)</h2>
+              <p class="text-contents"><div class="background-picture">
+              <img src="IMG_0084.jpg">
+            </div>大学院進学のため2019年にオーストラリアへ。語学学校を経て、大学院留学中。大学院ではビジネス修士号を取得中。会計学と情報システムを専攻。
+小学生から大学2年次までサッカーをしていたこともあり、州のサッカーリーグに所属。2020年のシーズンではチームで準優勝を果たす。サッカーを通じ、コネクションを増やし
+オーストラリアの文化を体験することができている。</p>
+            </div>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
   <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+      <div class="container">
+        <h3>ご質問がありましたら、下のボタンからお気軽にご連絡ください。</h3>
+        <span class="btn message" id="question-show">質問する</span>
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
+      <div class="question-modal-wrapper" id="question-modal"><!--質問フォーラム-->
+        <div class="modal">
+          <div class="close-modal"><!--×ボタンの表示-->
+            <i class="fa fa-zx fa-times"></i><!--アイタリックにする-->
+          </div>
+          <div id="question-form">
+           <h2>ご質問</h2>
+           <form action="#">
+           <input class="form-control" type="text" placeholder="お名前">
+           <input class="form-control" type="text" placeholder="メールアドレス">
+           <textarea rows="4" cols="80"></textarea>
+           <div id="submit-btn">質問する</div>
+           </form>
+          </div>
+        </div>
+      </div>
   </div>
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+      <a href="#" class="footer-logo">Logo</a>
+      <div class="footer-list">
+       <li>
+        <a href="#">会社概要</a>
+        <a href="#">よくある質問</a>
+        <a href="#">ヘルプ</a>
+       </li>
+     </div>
     </div>
-  </footer>
-</body>
+    </footer>
+    <script src="script.js">
+
+    </script>
+  </body>
 </html>
