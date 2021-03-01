@@ -1,17 +1,28 @@
-* {
-  box-sizing: border-box;
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
+.main{
+  height: 2215px;
+}
+
 .container {
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -19,43 +30,20 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(top.png);
+  background-image: url("IMG_0083.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  color: white;
+  background-color: rgba(46,46,46,0.1);
+  color: black;
   text-align: center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 50px;
   letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
 }
 
 .btn {
@@ -64,60 +52,67 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
-  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .btn:hover {
   opacity: 1;
 }
-
-.fa {
-  margin-right: 5px;
+.fab {
+  margin-right: 8px;
+}
+.facebook {
+  background-color:  #3b5998;
+  margin-right: 10px;
 }
 
-header {
-  height: 65px;
+.twitter {
+  background-color: #55acee;
+}
+
+.instagram {
+  background-color: #9932CC
+}
+
+.header {
+  height: 45px;
+  background-color: rgba(34, 49, 52, 0.9);
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
+  position: fixed;/*画面上に要素を固定する*/
+  top: 0;/*位置*/
+  z-index: 10;/*要素の重なりの順序を指定する10-1-0*/
+}
+
+.header-left li{
+    float: left;
+  /*float-leftヘッダーを横並びに*/
+}
+
+.header-left a{
+  line-height: 45px;
+  padding: 20px;
   top: 0;
   z-index: 10;
+  color: white;
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
+.header-right li {
   float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
 }
 
 .header-right a {
-  line-height: 65px;
-  padding: 0 25px;
+  line-height: 45px;
+  top: 0;
+  z-index: 10;
   color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+  margin-left:25px;
 }
 
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
+.second-wrapper {
+  padding-bottom: 2070px;
   padding-left: 5%;
-  padding-right: 5%;
   background-color: #f7f7f7;
-  text-align: center;
 }
 
 .heading {
@@ -126,146 +121,143 @@ header {
   color: #5f5d60;
 }
 
-.heading h2 {
-  font-weight: normal;
+.section-title {/*Background title*/
+  margin-bottom: 50px;
+  border-bottom: 2px solid #dee7ec;
+  text-align: center;
 }
 
-.lesson {
+.background {
   float: left;
-  width: 25%;
+  line-height: 40px;
+  margin: 20px
 }
 
-.lesson-icon {
-  position: relative;
+.background:hover {
+  opacity:1;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
+.background-picture {
+  position:relative;/*違う要素を重ねたいとき他の要素とリンク付(親)*/
+  float: left;
+  margin-right: 10px;
 }
 
 .text-contents {
-  width: 80%;
+  margin: 10px;
   display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
 }
 
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
+.message-wrapper{
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
+.container h3{
+  margin-top:200px;
+}
 
-.message {
-  padding: 15px 40px;
+.message{/*ボタン設定*/
   background-color: #5dca88;
+  padding: 15px 40px;
+  cursor: pointer; /*カーソルの種類を変える*/
+  box-shadow: 0px 7px #1a7940;/*ボックスに影を追加、水平方向、垂直方向、色の順番*/
+  margin-top: 50px;
+}
+
+.message:active {/*ボタンがクリックされた時にアクションをつける*/
+  box-shadow: none;/*影を消す*/
+  position:relative;/*position: relative;はposition: absolute;の基準位置を決めるために使っていましたが、要素の位置を変更するためにも使うことが出来ます。
+position: relative;をtopやleftと併用すると、その要素を本来の位置からずらせます。*/
+  top:7px;
+}
+
+.question-modal-wrapper {/*モーダル部分開始*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+
+}
+
+.modal {/*質問ボックス*/
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
   cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+#question-form{
+  width: 100%;
 }
 
-footer img {
-  width: 125px;
+#question-form h2{
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
-footer p {
-  color: #b3aeb5;
+#question-form input{
+  width: 320px;
+  margin-bottom: 20px;
   font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
 }
 
-footer {
+#question-form textarea{
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}/*モーダル部分終了*/
+
+.footer {
+  height: 100px;
+  background-color: #ceccf3;
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
-.menu-icon {
-  color: white;
-  float: right;
+.footer-logo{
   font-size: 25px;
-  padding: 21px 0;
-  display: none;
 }
 
-.clear {
-  clear: left;
+.footer-list{
+  float: right;
+
 }
 
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.footer-list li{
+  padding-bottom: 10px;
 }
