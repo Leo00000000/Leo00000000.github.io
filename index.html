@@ -7,52 +7,62 @@
     <title>Official Site</title><!--ページタイトル-->
     <script src="https://kit.fontawesome.com/df15f2aef8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="header"><!--ヘッダー始まり-->
       <div class="container">
-       <div class="header-left">
+        <div class="header-right">
           <ul>
+            <div class="btn-wrapper">
             <li>
-              <a href="#">Logo</a>
+                <a href="https://www.facebook.com/profile.php?id=100006041853745" class = "btn facebook"><i class="fab fa-facebook"></i></a>
             </li>
+            <li>
+                <a href="#" class = "btn twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/leoleo0000000/?hl=ja" class = "btn instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            </div>
           </ul>
+         </div>
         </div>
         <div class="header-right">
           <ul>
             <li>
-                <a href="#">レジュメ(日本語)</a>
+              <a href="#">Work</a>
             </li>
             <li>
-              <a href="Resume2 copy.pdf">Resume(English)</a>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
             </li>
             <li>
               <a href="#">Contact</a>
             </li>
           </ul>
         </div>
-      </div>
-    </div><!--ヘッダー終わり-->
+      </div><!--ヘッダー終わり-->
+
     <div class="top-wrapper">
        <div class="container">
         <h1 class="title">Official Page</h1>
-        <div class="btn-wrapper">
-          <a href="https://www.facebook.com/profile.php?id=100006041853745" class = "btn facebook"><i class="fab fa-facebook"></i>Facebook</a>
-          <a href="#" class = "btn twitter"><i class="fab fa-twitter"></i>Twitter</a>
-          <a href="https://www.instagram.com/leoleo0000000/?hl=ja" class = "btn instagram"><i class="fab fa-instagram"></i>instagram</a>
-        </div>
        </div>
     </div>
     <div class="main"><!--メイン始まり-->
       <div class="second-wrapper">
         <div class="container">
          <div class="heading">
-          <h2 class="section-title">Background</h2>
+          <div class="section-title">
+           <a href="#">Background</a>
+         </div>
           <div class="backgrounds">
             <div class="background"><!--日本-->
-              <h2>Japan (2014~2019)</h2>
+              <h2>Japan (2014〜2019)</h2>
               <p class="text-contents"><div class="background-picture">
-                <img src="IMG_4341.jpg"><!--375*500--></div>
+                <img id="myJapanpic" data-src="IMG_4341.jpg" width="400" height="300" class="lazyload"><!--写真スライドショー--></div>
               <div class="text-japan">愛媛県出身。高校卒業後、広島の大学に進学(2014年~2019年)。大学1年次から2年次まで体育会系のサッカー部に所属。しかし、視野を広げるため退部し、
               英語の勉強を初め、大学3年の夏休むに初めて渡米。北米の文化をもっと知りたいと思い、休学をして一年間カナダにワーキングホリデーすることを決意。
               帰国後、TOEIC600点を取得し、大学院留学を目指すが、英語での面接がうまくいかず落ちて浪人(2019)。</p></div>
@@ -60,20 +70,20 @@
             <div class="background"><!--アメリカ-->
               <h2>America (2017,2018, 2019)</h2>
               <p class="text-contents"><div class="background-picture">
-                <img src="IMG_0709.jpg">
+                <img src="IMG_0710.jpg"><img id="myAmericapic" data-src="IMG_0710.jpg" width="400" height="300" class="lazyload"><!--写真スライドショー-->
               </div>2017年、母の友人がアメリカのフィラデルフィアで国際結婚していたため、そこで3ヶ月ホームステイ（初海外）アメリカの魅力にハマり、
 年に一回渡米するためバイトで旅行費を溜める。フィラデルフィアを基点にワシントンDC、ニューヨーク、ボストン、ウエストヴァージニア、ピッツバーグなどを旅する(2018~2019)。この頃から本格的に
 海外での大学院進学を考え、アメリカの大学訪問などに時間を費やした。メールで大学の教授とやりとりし、アメリカの大学でのリアルな授業を体験した(2019)。</p>
             </div>
             <div class="background"><!--カナダ-->
-              <h2>Canada (2017~2018)</h2>
+              <h2>Canada (2017〜2018)</h2>
               <p class="text-contents">  <div class="background-picture">
                 <img src="IMG_4393.jpg">
               </div>カナダへ一年間ワーキングホリデーへ。カナダの首都であるオタワで、日本食レストラン、日本語を教えるなどをして生活費を稼ぐ。
 バンフ、トロント、ケベックなどに旅をする。文化の違いをより詳しく知るためにスポーツイベントのボランティアなどのボランティアに参加した。帰国後、大学に復学。</p>
             </div>
             <div class="background"><!--オーストラリア-->
-              <h2>Australia (2019~2021)</h2>
+              <h2>Australia (2019〜2021)</h2>
               <p class="text-contents"><div class="background-picture">
               <img src="IMG_0084.jpg">
             </div>大学院進学のため2019年にオーストラリアへ。語学学校を経て、大学院留学中。大学院ではビジネス修士号を取得中。会計学と情報システムを専攻。
@@ -112,9 +122,9 @@
       <a href="#" class="footer-logo">Logo</a>
       <div class="footer-list">
        <li>
-        <a href="#">会社概要</a>
-        <a href="#">よくある質問</a>
-        <a href="#">ヘルプ</a>
+        <a href="#">about</a>
+        <a href="#">work</a>
+        <a href="#">contact</a>
        </li>
      </div>
     </div>
